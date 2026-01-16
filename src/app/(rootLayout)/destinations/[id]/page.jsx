@@ -1,11 +1,20 @@
-
 import Booking from "@/components/routeSpecific/booking";
 import Link from "next/link";
-
+import { readFile } from "fs/promises";
+import path from "path";
 
 export default async function DestinationDetails({ params }) {
-  const {id} = await params;
-  const data = await fetch(`${process.env.NEXT_SITE_URL}/destinations.json`).then(resData => resData.json()).then(data => data) || [];
+  const { id } = await params;
+
+  const filePath = path.join(
+    process.cwd(),
+    "public",
+    "destinations.json"
+  );
+
+  const file = await readFile(filePath, "utf-8");
+  const data = JSON.parse(file) || [];
+
   const destination = data.find(item => item.id === id);
 
   if (!destination) {
@@ -63,7 +72,8 @@ export default async function DestinationDetails({ params }) {
           </p>
         </div>
 
-        <Booking></Booking>
+        {/* Booking */}
+        <Booking />
       </div>
     </section>
   );

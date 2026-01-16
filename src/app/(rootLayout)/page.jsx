@@ -1,10 +1,27 @@
+import { readFile } from "fs/promises";
+import path from "path";
 import DestinationCard from "@/components/cards/DestinationCard";
 import PackageCard from "@/components/cards/PackageCard";
 import Link from "next/link";
 
 export default async function HomePage() {
-  const destinations = await fetch(`${process.env.NEXT_SITE_URL}/destinations.json`).then(resData => resData.json()).then(data => data) || [];
-  const packages = await fetch(`${process.env.NEXT_SITE_URL}/packages.json`).then(resData => resData.json()).then(data => data) || [];
+  const filePathD = path.join(
+      process.cwd(),
+      "public",
+      "destinations.json"
+    );
+  
+    const fileD = await readFile(filePathD, "utf-8");
+    const destinations = JSON.parse(fileD) || [];
+  
+  const filePathP = path.join(
+      process.cwd(),
+      "public",
+      "packages.json"
+    );
+  
+    const fileP = await readFile(filePathP, "utf-8");
+    const packages = JSON.parse(fileP) || [];
 
   return (
     <section className="mt-20 space-y-32">

@@ -1,15 +1,24 @@
 import Booking from "@/components/routeSpecific/booking";
 import Link from "next/link";
+import { readFile } from "fs/promises";
+import path from "path";
 
 export default async function PackageDetails({ params }) {
+  // ✅ Next.js 16: params can be async
   const { id } = await params;
 
-  const data =
-    (await fetch(`${process.env.NEXT_SITE_URL}/packages.json`)
-      .then((res) => res.json())
-      .then((data) => data)) || [];
+  const filePath = path.join(
+    process.cwd(),
+    "public",
+    "packages.json"
+  );
 
-  const pkg = data.find((item) => item.id === id);
+  const file = await readFile(filePath, "utf-8");
+  const data = JSON.parse(file) || [];
+
+  const pkg = data.find(
+    (item) => String(item.id) === String(id)
+  );
 
   if (!pkg) {
     return (
@@ -98,7 +107,8 @@ export default async function PackageDetails({ params }) {
           </ul>
         </div>
 
-        <Booking></Booking>
+        {/* Booking */}
+        <Booking />
       </div>
     </section>
   );
