@@ -1,0 +1,72 @@
+[
+  {
+    "id": "D01",
+    "destination": "Santorini Sunsets",
+    "image": "https://www.kivotoshotels.com/wp-content/uploads/2021/10/oia-sunset-1920x1280.jpg",
+    "description": "Cliffside villages, whitewashed houses, and legendary sunsets overlooking the Aegean Sea.",
+    "price": 220
+  },
+  {
+    "id": "D02",
+    "destination": "Swiss Alps",
+    "image": "https://www.villa-finder.com/magazine/wp-content/uploads/2023/12/marco-meyer-eAAjKAGEKmI-unsplash.jpg",
+    "description": "Snow-capped peaks, alpine villages, scenic train routes, and breathtaking mountain landscapes.",
+    "price": 260
+  },
+  {
+    "id": "D03",
+    "destination": "Bali Beaches",
+    "image": "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Golden beaches, lush rice terraces, spiritual retreats, and vibrant island culture.",
+    "price": 150
+  },
+  {
+    "id": "D04",
+    "destination": "Machu Picchu",
+    "image": "https://cdn.mos.cms.futurecdn.net/WFJBpzs4J5x3uvbeKdnm3i-650-80.jpg",
+    "description": "A mystical Incan citadel set high in the Andes, surrounded by cloud forests and ancient trails.",
+    "price": 240
+  },
+  {
+    "id": "D05",
+    "destination": "Great Barrier Reef",
+    "image": "https://cdn.britannica.com/64/155864-050-34FBD7A2/view-Great-Barrier-Reef-Australia-coast.jpg",
+    "description": "The world’s largest coral reef system, offering snorkeling, diving, and marine biodiversity.",
+    "price": 280
+  },
+  {
+    "id": "D06",
+    "destination": "Sahara Desert Experience",
+    "image": "https://yale-threesixty.transforms.svdcdn.com/production/Erg_Chebbi_Maroc_Wikimedia_web.jpg?w=1500&h=1500&q=80&auto=format&fit=clip&dm=1740245716&s=4fb85369e1f315e97301b3397fe29cd4",
+    "description": "Endless dunes, camel treks, desert camps, and unforgettable stargazing under open skies.",
+    "price": 190
+  },
+  {
+    "id": "D07",
+    "destination": "Amalfi Coast",
+    "image": "https://th-thumbnailer.cdn-si-edu.com/tMmwyBdA9OqVHcZeUxfvRy83WJc=/960x439/filters:focal(2080x1420:2081x1421)/https://tf-cmsv2-journeys-media.s3.amazonaws.com/filer/57/96/57968405-af83-42f6-916c-c9dca7d9ed56/ita_positano_ist_947783706.jpg",
+    "description": "Dramatic coastlines, colorful villages, seaside roads, and Mediterranean charm.",
+    "price": 230
+  },
+  {
+    "id": "D08",
+    "destination": "Northern Lights – Iceland",
+    "image": "https://www.travelandleisure.com/thmb/nwQzgAjkfVPZwhmJyKPSeP7jnuk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/northern-lights-kirkjufell-mountain-snaefellsnes-iceland-ICELANDLIGHTS1218-824f48715748425f828f05aa2a28dfe0.jpg",
+    "description": "A natural light spectacle dancing across Arctic skies, best viewed from remote landscapes.",
+    "price": 270
+  },
+  {
+    "id": "D09",
+    "destination": "Safari in Serengeti",
+    "image": "https://www.serengetiparktanzania.com/wp-content/uploads/2021/08/Serengeti-National-Park-Tours.jpg",
+    "description": "Wildlife safaris across vast plains, featuring lions, elephants, and the great migration.",
+    "price": 300
+  },
+  {
+    "id": "D10",
+    "destination": "Amazon Rainforest",
+    "image": "https://www.usnews.com/object/image/0000015e-38b8-d369-a3de-3efd04fe0000/170831-amazon-editorial.jpg?update-time=1504190214911&size=responsive970",
+    "description": "An immersive journey into the world’s largest rainforest, rich with wildlife and indigenous culture.",
+    "price": 210
+  }
+]

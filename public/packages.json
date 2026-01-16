@@ -1,0 +1,109 @@
+[
+  {
+    "id": "P01",
+    "name": "Timeless Wonders of Japan",
+    "country": "Japan",
+    "places": [
+      "Tokyo",
+      "Kyoto",
+      "Mount Fuji",
+      "Nara"
+    ],
+    "duration": "10 days",
+    "price": 3200,
+    "image": "https://i.ibb.co.com/DgMBdKTc/ca412c95-1697-4878-ad1b-dfbca6b99644.png"
+  },
+  {
+    "id": "P02",
+    "name": "Mediterranean Dream Escape",
+    "country": "Italy",
+    "places": [
+      "Amalfi Coast",
+      "Venice",
+      "Tuscany"
+    ],
+    "duration": "8 days",
+    "price": 2800,
+    "image": "https://i.ibb.co.com/7dBgD4hZ/03ee5e14-7a71-4167-8568-446d9f80c05a.png"
+  },
+  {
+    "id": "P03",
+    "name": "Mystic Sands & Ancient Kingdoms",
+    "country": "Egypt",
+    "places": [
+      "Giza Pyramids",
+      "Luxor",
+      "Nile River Cruise"
+    ],
+    "duration": "9 days",
+    "price": 2600,
+    "image": "https://i.ibb.co.com/kgThyyMY/9ea8b4d9-50c7-45bf-a7e2-7e48bf5e3554.png"
+  },
+  {
+    "id": "P04",
+    "name": "Alpine Majesty Expedition",
+    "country": "Switzerland",
+    "places": [
+      "Interlaken",
+      "Jungfraujoch",
+      "Zermatt",
+      "Lucerne"
+    ],
+    "duration": "7 days",
+    "price": 3500,
+    "image": "https://i.ibb.co.com/xKQ2y4cT/9a028a0e-eb8a-41ce-9539-cd8fe630582e.png"
+  },
+  {
+    "id": "P05",
+    "name": "Bali Bliss & Island Serenity",
+    "country": "Indonesia",
+    "places": [
+      "Ubud",
+      "Uluwatu",
+      "Nusa Penida"
+    ],
+    "duration": "6 days",
+    "price": 1900,
+    "image": "https://i.ibb.co.com/KxtCMgj3/ebe1b68a-d171-4231-ade6-4a358b8c3b50.png"
+  },
+  {
+    "id": "P06",
+    "name": "Legends of the Andes",
+    "country": "Peru",
+    "places": [
+      "Cusco",
+      "Machu Picchu",
+      "Sacred Valley"
+    ],
+    "duration": "8 days",
+    "price": 3100,
+    "image": "https://i.ibb.co.com/tPvdk9sX/70fe6032-e025-46d4-b47c-6013f640003b.png"
+  },
+  {
+    "id": "P07",
+    "name": "Nordic Lights & Arctic Dreams",
+    "country": "Iceland",
+    "places": [
+      "Reykjavik",
+      "Golden Circle",
+      "Blue Lagoon",
+      "Northern Lights Zone"
+    ],
+    "duration": "7 days",
+    "price": 4200,
+    "image": "https://i.ibb.co.com/hF7w89Bx/a8accf4f-5bc2-435d-8d58-a369136242e9.png"
+  },
+  {
+    "id": "P08",
+    "name": "African Safari Grand Journey",
+    "country": "Tanzania",
+    "places": [
+      "Serengeti National Park",
+      "Ngorongoro Crater",
+      "Lake Manyara"
+    ],
+    "duration": "9 days",
+    "price": 4800,
+    "image": "https://i.ibb.co.com/LV1Qk0Z/99584f99-9895-4b56-8e9d-4cb4e73668b7.png"
+  }
+]

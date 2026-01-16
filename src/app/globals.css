@@ -1,26 +1,82 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@theme {
+  /* Colors (from design system image) */
+  --color-primary: #65ABEA;     /* Luminex Blue */
+  --color-secondary: #C3E0FA;   /* Accent Blue */
+  --color-title: #212121;       /* Title Black */
+  --color-text: #999999;        /* Text Grey */
+  --color-surface: #ffffff;
+  --color-muted: #f6f8fa;
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+
+  /* Max width (1920px = max-w-480) */
+  --container-2xl: 1920px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    @apply bg-surface antialiased;
+    padding-inline: clamp(1rem, 4vw, 2.5rem);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1 {
+    @apply text-title font-medium;
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  h2 {
+    @apply text-title font-medium;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  h3 {
+    @apply text-title font-medium;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  p {
+    @apply text-base leading-6;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+@layer components {
+  /* Primary Button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center
+           rounded-lg bg-primary px-5 py-2.5
+           text-white text-sm font-medium
+           transition hover:opacity-90;
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center
+           rounded-lg bg-secondary px-5 py-2.5
+           text-title text-sm font-medium;
+  }
+
+  /* Glass Card (used in hero stats, testimonials, etc.) */
+  .glass-card {
+    @apply rounded-xl bg-white/20 backdrop-blur-md
+           border border-white/30;
+  }
+
+  /* Chip / Tag */
+  .chip {
+    @apply inline-flex items-center gap-2
+           rounded-full bg-muted px-3 py-1
+           text-xs text-title;
+  }
 }
